@@ -14,13 +14,13 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: white;
       text-align: center;
-      background-color: black;
+      background-color: #ffcc00; /* fallback yellow background */
       overflow: hidden;
     }
 
     /* Navigation bar */
     nav {
-      background-color: rgba(255, 204, 0, 0.9);
+      background-color: rgba(255, 204, 0, 0.95);
       display: flex;
       justify-content: center;
       padding: 15px 0;
@@ -54,10 +54,10 @@
       left: 0;
       width: 100%;
       height: 100vh;
-      background-size: contain; /* <— shows full image without zoom */
+      background-size: contain; /* show full image */
       background-position: center;
       background-repeat: no-repeat;
-      background-color: black; /* fills the edges if image doesn’t fill screen */
+      background-color: #ffcc00; /* yellow filler where image doesn’t reach */
       display: flex;
       align-items: center;
       justify-content: center;
@@ -91,7 +91,7 @@
   </nav>
 
   <main>
-    <!-- Your uploaded ramen photos -->
+    <!-- Your 5 slides -->
     <div id="home" class="section active" style="background-image: url('Ramen slide 1.jpg');">
       <h1>Insert Text Here</h1>
     </div>
@@ -104,12 +104,12 @@
       <h1>Insert Text Here</h1>
     </div>
 
-    <!-- Extra ramen photos for the last two slides -->
-    <div id="evolution" class="section" style="background-image: url('https://images.unsplash.com/photo-1625948573403-06b4d3dbfc0a');">
+    <!-- placeholders for slides 4 & 5 -->
+    <div id="evolution" class="section" style="background-image: url('Ramen slide 4.jpg');">
       <h1>Insert Text Here</h1>
     </div>
 
-    <div id="funfacts" class="section" style="background-image: url('https://images.unsplash.com/photo-1590080875839-6b846e1e8c94');">
+    <div id="funfacts" class="section" style="background-image: url('Ramen slide 5.jpg');">
       <h1>Insert Text Here</h1>
     </div>
   </main>
