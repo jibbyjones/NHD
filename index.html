@@ -5,20 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The History of Ramen</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #fffaf0;
-      color: #222;
+      color: white;
+      text-align: center;
     }
 
     /* Navigation bar */
     nav {
-      background-color: #ffcc00;
+      background-color: rgba(255, 204, 0, 0.9);
       display: flex;
       justify-content: center;
       padding: 15px 0;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 10;
     }
 
     nav button {
@@ -37,30 +45,29 @@
       transform: scale(1.1);
     }
 
-    /* Page sections */
+    /* Sections */
     .section {
       display: none;
-      padding: 80px 20px;
-      text-align: center;
-      max-width: 800px;
-      margin: auto;
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: none;
+      align-items: center;
+      justify-content: center;
     }
 
     .active {
-      display: block;
+      display: flex;
     }
 
     h1 {
       font-size: 3rem;
-      color: #b30000;
       font-weight: 900;
-      text-transform: uppercase;
-      margin-bottom: 30px;
-    }
-
-    p {
-      font-size: 1.2rem;
-      line-height: 1.6;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px 40px;
+      border-radius: 10px;
     }
   </style>
 </head>
@@ -75,29 +82,24 @@
   </nav>
 
   <main>
-    <div id="home" class="section active">
-      <h1>The History of Ramen</h1>
-      <p>Welcome to my project! Click the buttons above to explore different parts of ramen's history.</p>
+    <div id="home" class="section active" style="background-image: url('https://images.unsplash.com/photo-1604909052197-4ed40d18f3f6');">
+      <h1>Insert Text Here</h1>
     </div>
 
-    <div id="origins" class="section">
-      <h1>Origins</h1>
-      <p>Insert your research about where ramen began...</p>
+    <div id="origins" class="section" style="background-image: url('https://images.unsplash.com/photo-1601924582975-7d74907c8e8b');">
+      <h1>Insert Text Here</h1>
     </div>
 
-    <div id="ingredients" class="section">
-      <h1>Ingredients</h1>
-      <p>Talk about noodles, broth, toppings, and more...</p>
+    <div id="ingredients" class="section" style="background-image: url('https://images.unsplash.com/photo-1605473259399-31e7f3c23d3f');">
+      <h1>Insert Text Here</h1>
     </div>
 
-    <div id="evolution" class="section">
-      <h1>Evolution</h1>
-      <p>Explain how ramen has changed through the years...</p>
+    <div id="evolution" class="section" style="background-image: url('https://images.unsplash.com/photo-1625948573403-06b4d3dbfc0a');">
+      <h1>Insert Text Here</h1>
     </div>
 
-    <div id="funfacts" class="section">
-      <h1>Fun Facts</h1>
-      <p>Share cool trivia or interesting ramen facts here!</p>
+    <div id="funfacts" class="section" style="background-image: url('https://images.unsplash.com/photo-1590080875839-6b846e1e8c94');">
+      <h1>Insert Text Here</h1>
     </div>
   </main>
 
@@ -110,4 +112,3 @@
 
 </body>
 </html>
-
