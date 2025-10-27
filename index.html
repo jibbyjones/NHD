@@ -1,1 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The History of Ramen</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fffaf0;
+      color: #222;
+    }
+
+    /* Navigation bar */
+    nav {
+      background-color: #ffcc00;
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    nav button {
+      background: none;
+      border: none;
+      font-weight: bold;
+      font-size: 18px;
+      margin: 0 20px;
+      color: #000;
+      cursor: pointer;
+      transition: color 0.3s, transform 0.2s;
+    }
+
+    nav button:hover {
+      color: #b30000;
+      transform: scale(1.1);
+    }
+
+    /* Page sections */
+    .section {
+      display: none;
+      padding: 80px 20px;
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .active {
+      display: block;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #b30000;
+      font-weight: 900;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <button onclick="showSection('home')">Home</button>
+    <button onclick="showSection('origins')">Origins</button>
+    <button onclick="showSection('ingredients')">Ingredients</button>
+    <button onclick="showSection('evolution')">Evolution</button>
+    <button onclick="showSection('funfacts')">Fun Facts</button>
+  </nav>
+
+  <main>
+    <div id="home" class="section active">
+      <h1>The History of Ramen</h1>
+      <p>Welcome to my project! Click the buttons above to explore different parts of ramen's history.</p>
+    </div>
+
+    <div id="origins" class="section">
+      <h1>Origins</h1>
+      <p>Insert your research about where ramen began...</p>
+    </div>
+
+    <div id="ingredients" class="section">
+      <h1>Ingredients</h1>
+      <p>Talk about noodles, broth, toppings, and more...</p>
+    </div>
+
+    <div id="evolution" class="section">
+      <h1>Evolution</h1>
+      <p>Explain how ramen has changed through the years...</p>
+    </div>
+
+    <div id="funfacts" class="section">
+      <h1>Fun Facts</h1>
+      <p>Share cool trivia or interesting ramen facts here!</p>
+    </div>
+  </main>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('.section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
 
