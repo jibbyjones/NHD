@@ -54,15 +54,15 @@
       left: 0;
       width: 100%;
       height: 100vh;
-      background-size: 110%; /* slightly zoomed-out look */
+      background-size: contain; /* <— shows full image without zoom */
       background-position: center;
       background-repeat: no-repeat;
+      background-color: black; /* fills the edges if image doesn’t fill screen */
       display: flex;
       align-items: center;
       justify-content: center;
       opacity: 0;
       transition: opacity 0.8s ease;
-      background-color: black; /* fills empty space if image doesn’t fill screen */
     }
 
     .active {
